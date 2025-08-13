@@ -18,12 +18,13 @@ body {
 	margin: 3rem 0 0 0;
 }
 nav {
-	width: clamp(480px, 48vw, 960px);
+	width: clamp(480px, 48vw, 720px);
 	padding: 1rem;
 }
 nav img {
 	float: right;
 	max-width: 14ch;
+	margin: 0.5rem;	
 	border: 0.25rem solid #474747;
 }
 h2 {
@@ -40,7 +41,7 @@ a:link, a:visited, a:active {
 	text-decoration: none;
 }
 section {
-	width: clamp(480px, 48vw, 960px);
+	width: clamp(480px, 48vw, 720px);
 	padding: 1rem;
 	hyphens: auto;
 	text-align: justify;
@@ -51,7 +52,7 @@ section {
 	}
 	nav, section {
 		width: 80%;
-		margin: 0;
+		margin: 1rem 0 0 0;
 	}
 	nav img {
 		max-width: 10ch;
@@ -61,7 +62,15 @@ section {
 		margin-bottom: 0.5rem;		
 	}
 	.sep {
-		margin: 3rem;
+		margin: 4rem;
+	}
+}
+@media (max-width: 600px) {
+	nav, section {
+		width: 100%;
+		margin: 0;
+		padding: 1rem;
+		box-sizing: border-box;
 	}
 }
 </style>
@@ -71,7 +80,7 @@ section {
 	<img src="https://flatmoll.github.io/picture.jpeg" alt="Moscow, 2019">
 	<h2>Fuad Veliev</h2>
 	<p>
-	Undergradute computer engineering student
+	Computer engineering, undergraduate
 	<br>
 	<a href="https://matrix.to/#/@fmoll:envs.net/">Matrix</a>
 	&nbsp;
@@ -88,21 +97,22 @@ section {
 </nav>
 <section>
 <p>
-Welcome to my resume! The first part of it is a short free-form narrative, something I would be curious to read from a person I am going to work with. The second part is a more traditional bullet-list skeleton of my skills and activities. This resume is available in <a href="https://flatmoll.github.io/resume.pdf">PDF</a>.
+Greetings! The first part of this resume is a short free-form narrative, something I would be interested to read about my potential colleague. The second part is a more traditional bullet-list skeleton of my skills and activities. This resume is also available in <a href="https://flatmoll.github.io/resume.pdf">PDF</a>.
 </p>
 
 	<h2>Narrative</h2>
 <p>
-My interests mainly emerged from math. Math shapes the way I think about computers and programming, if not how I reason overall. I enjoy solving am occasional puzzle, being a part of my high school's math team, or just conversing with someone about an interesting concept or theorem.
+My interests mainly emerged from math. Math shapes the way I think about computers and programming, if not how I reason overall. I enjoy solving an occasional puzzle and participating in math-related events.
 </p>
 <p>
-But these interests adapt with me. Be it a change in environment, a personal discovery, or just a new operating system, I see everything through the prism of curiosity. Once I am interested, I dig deeper and find related acquaintances. This is how I learned about Linux and the variety of its applications and tools (that I now use on a daily basis). Consequently, I wrote an <a href="https://zenodo.org/records/15171332">article</a> on the application of  ML in kernel design, and maintain a handful of articles on the <a href="https://wiki.archlinux.org/title/User:Flatmoll">Arch Linux Wiki</a>.
+These interests are shaped by my curisoity. Be it a new finding or environment, I dig deeper or find related acquaintances, respectively. This is how I learned about Linux, consequantly writing an <a href="https://zenodo.org/records/15171332">article</a> on the application of ML in kernel design as part of my creative assignment. I also maintain a handful of articles on the <a href="https://wiki.archlinux.org/title/User:Flatmoll">Arch Linux Wiki</a>.
 </p>
 <p>
-I enjoy code that is relatively simple and robust, which not only accomplishes its objective, but does it in a correct, efficient, and easily explicable way. I am allergic to monstrous complexities and prefer doing things step-by-step, even beyond programming. See <a href="https://github.com/flatmoll/swaysensor">swaysensor</a> for an example of program I wrote that represents this approach.
+I enjoy robust and relatively simple code, which not only accomplishes its objective, but does it in a correct, efficient, and easily explicable way. I am allergic to monstrous complexities and prefer doing things step-by-step, even beyond programming. See <a href="https://github.com/flatmoll/swaysensor">swaysensor</a> for an example of program I wrote that represents this approach.
 </p>
 <p>
-I love contributing to open communities. Contribution is an enjoyable act by itself, but I also make sure to maintain my initial inputs. For a while, I volunteered at a laptop repair service, where I assisted in diagnosing and fixing motherboard defects and failures. My current user contributions comprise of the aforementioned ArchWiki edits and articles, as well as of polling and adding new places to <a href="https://openstreetmap.org/user/flatmoll">OpenStreetMap</a>.
+I love contributing to open communities. Contribution is an enjoyable act by itself, but I also make sure to maintain my initial inputs. For a while, I volunteered at a laptop repair service, where I assisted in diagnosing and fixing motherboard defects. My current user contributions include my activity on ArchWiki and OpenStreetMap (OSM).
+</p>
 
 <div class="sep"></div>
 
@@ -130,16 +140,16 @@ I love contributing to open communities. Contribution is an enjoyable act by its
 	<h2 id="projects">Projects and Contributions</h2>
 <ul>		
 <li>
-<b>swaysensor</b>: A sleek and efficient integration of <code><a href="https://gitlab.freedesktop.org/hadess/iio-sensor-proxy/">iio-sensor-proxy</a></code> for window managers, written in C. Supports auto-rotation, ambient light updates, compass updates, and interaction on proximity sensor signals.
+<b>swaysensor</b>: An efficient integration of <code><a href="https://gitlab.freedesktop.org/hadess/iio-sensor-proxy/">iio-sensor-proxy</a></code> for window managers, written in C. Supports orientation, tilt, ambient light, and proximity updates.
 </li>
 <li>
-<b>lmsti</b>: A small Python bot for communicating with LM Studio through Telegram. Made for my friend and transferred under his governace.
+<b>lmsti</b>: A small Python bot for communicating with LM Studio through Telegram, made for my friend.
 </li>
 <li>
-<b>ArchWiki</b> <i>(contrib.)</i>: Maintainance of several articles about Arch Linux running on Lenovo Yoga laptops.
+<b>ArchWiki</b> <i>(contrib.)</i>: Article maintenace.
 </li>
 <li>
-<b>OpenStreetMap</b> <i>(contrib.)</i>: Inclusion of places in my vicinity to the map.
+<b>OpenStreetMap</b> <i>(contrib.)</i>: Polling and inclusion of nodes to the map.
 </li>
 </ul>
 
